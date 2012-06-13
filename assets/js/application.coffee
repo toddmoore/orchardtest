@@ -54,11 +54,21 @@ class OrchardTreeMenu extends Base
 			
 
 		if length
-			li.prepend(@tpl.clone().addClass(
-				@childrenClass + " " +@closedClass
-				).text("+"))
 			if !li.hasClass("open")
 				li.find("ul").css("display", "none")
+				text = "+"
+				li.prepend(@tpl.clone().addClass(
+					@childrenClass + " " +@closedClass
+					).text(text))
+			else
+				text = "-"
+				li.prepend(@tpl.clone().addClass(
+					@childrenClass + " " +@openClass
+					).text(text))
+
+
+
+
 			li.click(clickedParent)
 
 		else
