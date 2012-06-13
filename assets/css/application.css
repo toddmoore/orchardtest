@@ -79,6 +79,9 @@ header nav a {
 header nav.primary { float: right; margin-right: 20px; }
 
 /* Sidebar */
+nav.sidebar {
+	margin-left: -8px;
+}
 nav.sidebar a {
 	color: #2b2726;
 	text-decoration: none;
@@ -97,14 +100,16 @@ nav.sidebar li > em {
 	position: relative;
 	top: 5px;
 	left: -5px;
-	margin-left: -8px;
 	width: 8px;
 	height: 8px;
+	padding-top: 0px;
 	background: #b8aa90;
 	border: 1px solid #2b2726;
 	color: #fff;
-	font-size: 50%;
-	line-height: 6px;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 8px;
+	font-family: "Helvetica";
 }
 
 /* Panels */
@@ -168,7 +173,7 @@ nav.sidebar li > em.more {
 	background: #585544 !important;
 }
 nav.sidebar li > em.more.closed {
-	text-indent: 0px;
+	text-indent: 1px;
 }
 nav.sidebar li > em.more.open {
 	text-indent: 2px;
@@ -177,7 +182,6 @@ nav.sidebar li > em.more.open {
 .btn-green:hover {
 	background: #2a5a34;
 }
-
 
 
 
