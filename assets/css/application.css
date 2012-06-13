@@ -1,0 +1,189 @@
+@import url("modules.css");
+
+
+/*
+Layout
+------------------------------------------------------------------------------*/
+#container { 
+	min-height: 100%; 
+	background: #fdfaf1 url(../images/ui/bg-sidebar.png) repeat-y; 
+	font-size:97%;
+
+}
+header { 
+	background-color: #eadac0; 
+	height: 122px; 
+	position: relative; 
+	overflow: hidden; 
+}
+
+#main { 
+	padding-bottom: 50px;
+}
+footer {
+	position: relative;
+	height: 30px;
+	background: #5e5946;
+	margin-top: -30px;
+}
+#left-sidebar {
+	padding: 30px;
+	float: left;
+	width: 189px;
+
+	min-height: 300px;
+}
+
+#content {
+	margin-left: 249px;
+	min-height: 400px;
+}
+
+#content .inner { padding: 40px; }
+
+
+/*
+Modules
+------------------------------------------------------------------------------*/
+header h1 { 
+	margin: 5px 0 0 20px;
+}
+
+header .nav { 
+	background: #275d2c; 
+	border-bottom: 3px solid #90ab66; 
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	color: #FFF;
+}
+
+header nav {
+	margin: 6px auto;
+}
+
+header nav a {
+	color: #fff !important;
+}
+
+/* Breadcrumb */
+header nav.breadcrumb { float: left; margin-left: 20px; }
+header nav.breadcrumb > div {
+	float: left;
+}
+header nav a {
+	margin: 0 10px;
+}
+
+/* Primary Nav */
+header nav.primary { float: right; margin-right: 20px; }
+
+/* Sidebar */
+nav.sidebar a {
+	color: #2b2726;
+	text-decoration: none;
+}
+nav.sidebar li {
+	margin-bottom: 14px;
+}
+nav.sidebar ul ul {
+	padding-top: 14px;
+	padding-left: 2em;
+	display: none;
+}
+
+nav.sidebar li > em {
+	float: left;
+	position: relative;
+	top: 5px;
+	left: -5px;
+	margin-left: -8px;
+	width: 8px;
+	height: 8px;
+	background: #b8aa90;
+	border: 1px solid #2b2726;
+	color: #fff;
+	font-size: 50%;
+	line-height: 6px;
+}
+
+/* Panels */
+.panel {
+	padding: 30px;
+	background: #f5f3f4;
+	border: 1px solid #abaaa6;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	overflow: hidden;
+}
+
+.panel > h3 {
+	margin-top: 0;
+}
+
+.panel.ext {
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.panel .hd {
+	padding: 10px;
+	background: #d1cfb8;
+	border-bottom: 1px solid #abaaa6;;
+}
+
+.panel .bd {
+	padding: 10px;
+}
+
+
+/*
+Buttons
+------------------------------------------------------------------------------*/
+.btn-green { 
+	background: #317b3c;
+	color: #fff;
+	border: 1px solid #2a5a34;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	overflow: hidden;
+	padding: 5px 8px;
+	font-size: 12px !important;
+}
+
+
+
+
+
+/*
+States
+------------------------------------------------------------------------------*/
+header nav.breadcrumb .active a {
+	text-decoration: none !important;
+}
+
+nav.sidebar li > em.more {
+	background: #585544 !important;
+}
+nav.sidebar li > em.more.closed {
+	text-indent: 0px;
+}
+nav.sidebar li > em.more.open {
+	text-indent: 2px;
+}
+
+.btn-green:hover {
+	background: #2a5a34;
+}
+
+
+
+
+
+
+
+
+
+
