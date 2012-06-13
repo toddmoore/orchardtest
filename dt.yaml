@@ -1,0 +1,18 @@
+
+
+id: "ORCHARD"
+
+config:
+  path_to_file_server: ""
+
+# Add folders or files
+# to package up
+# relative to project root
+folders:
+  css: "assets/css"
+  images: "assets/images"
+  js: "assets/js"
+  coffee: "assets/coffee"
+  index: "index.html"
+
+  
