@@ -8,6 +8,7 @@ Layout
 	min-height: 100%; 
 	background: #fdfaf1 url(../images/ui/bg-sidebar.png) repeat-y; 
 	font-size:97%;
+	overflow: hidden;
 
 }
 header { 
@@ -92,7 +93,7 @@ nav.sidebar li {
 nav.sidebar ul ul {
 	padding-top: 14px;
 	padding-left: 2em;
-	display: none;
+	/*display: none;*/
 }
 
 nav.sidebar li > em {
@@ -108,8 +109,12 @@ nav.sidebar li > em {
 	color: #fff;
 	font-size: 10px;
 	font-style: normal;
-	line-height: 8px;
+	line-height: 6px;
 	font-family: "Helvetica";
+}
+
+nav.sidebar li > em.more {
+	background: #585544 !important;
 }
 
 /* Panels */
@@ -169,9 +174,6 @@ header nav.breadcrumb .active a {
 	text-decoration: none !important;
 }
 
-nav.sidebar li > em.more {
-	background: #585544 !important;
-}
 nav.sidebar li > em.more.closed {
 	text-indent: 1px;
 }
